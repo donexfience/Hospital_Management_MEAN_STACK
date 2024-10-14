@@ -1,0 +1,34 @@
+<div fxLayout class="login">
+  <div
+    class="container"
+    fxLayout
+    fxLayoutAlign="start"
+    fxFlexOffset="120px"
+    fxFlexOffset.lt-md="60px"
+  >
+    <mat-card class="login-form" fxFlex="380px" fxFlex.lt-sm="350px">
+      <form
+        (submit)="onLogin(loginForm)"
+        fxLayout="column"
+        fxLayoutAlign="center center"
+        #loginForm="ngForm"
+      >
+        <mat-form-field appearance="outline">
+          <mat-label> User Name</mat-label>
+          <input
+            matInput
+            type="text"
+            name="username"
+            ngModel
+            placeholder="User Name"
+            #username="ngModel"
+            required
+          />
+          <!-- <mat-error *ngIf="username.invalid"
+            >Please enter valid Username</mat-error
+          > -->
+        </mat-form-field>
+      </form>
+    </mat-card>
+  </div>
+</div>
