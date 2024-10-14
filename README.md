@@ -28,43 +28,53 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Run npx browserslist in a project directory to see which browsers were selected by your queries.
 
 ## browserlist
+# Browserslist Output
 
-$ npx browserslist
-and_chr 61
-and_ff 56
-and_qq 1.2
-and_uc 11.4
-android 56
-baidu 7.12
-bb 10
-chrome 62
-edge 16
-firefox 56
-ios_saf 11
-opera 48
-safari 11
-samsung 5
-Browsers
-The following table maps browser names & their target devices into identifiers used by browserslist.
+The following are the browser versions detected on your system:
 
-Browser Name Desktop Android iOS Other Mobile
-Android (WebView) Android
-Baidu Baidu
-BlackBerry BlackBerry bb
-Chrome Chrome ChromeAndroid and_chr ↪︎ ios_saf2
-Edge Edge ↪︎ and_chr ↪︎ ios_saf2
-Electron Electron
-Firefox Firefox ff FirefoxAndroid and_ff ↪︎ ios_saf2
-Internet Explorer Explorer ie ie_mob
-Node.js Node
-KaiOS Browser kaios
-Opera Opera op_mob 1 ↪︎ ios_saf2
-Opera Mini3 OperaMini op_mini
-QQ browser and_qq
-Safari Safari iOS ios_saf
-Samsung Internet Samsung
-UC Browser UCAndroid and_uc
-↪︎ name implies that the browser uses the same engine captured by name
-1 Opera Mobile ≈ Chrome Android
-2 All iOS browsers use WebKit
-3 Opera Mini has 2 modes “Extreme” and “High” for data saving. op_mini targets at the “Extreme” one. “High” is compatible with the normal Opera Mobile.
+## Browser Versions
+| Browser                   | Version |
+|---------------------------|---------|
+| Android Chrome            | 61      |
+| Android Firefox           | 56      |
+| Android QQ                | 1.2     |
+| Android UC                | 11.4    |
+| Android                   | 56      |
+| Baidu                     | 7.12    |
+| BlackBerry                | 10      |
+| Chrome                    | 62      |
+| Edge                      | 16      |
+| Firefox                   | 56      |
+| iOS Safari                | 11      |
+| Opera                     | 48      |
+| Safari                    | 11      |
+| Samsung                   | 5       |
+
+## Browser Identifiers
+
+The following table maps browser names and their target devices into identifiers used by Browserslist:
+
+| Browser Name              | Desktop          | Android                  | iOS            | Other Mobile       |
+|---------------------------|------------------|--------------------------|----------------|---------------------|
+| Android (WebView)         | Android          |                          |                |                     |
+| Baidu                     | Baidu            |                          |                |                     |
+| BlackBerry                | BlackBerry       | bb                       |                |                     |
+| Chrome                    | Chrome           | ChromeAndroid            | and_chr ↪︎ ios_saf2 |
+| Edge                      | Edge             | and_chr                  | ios_saf2      |                     |
+| Electron                  | Electron         |                          |                |                     |
+| Firefox                   | Firefox          | ff                       | FirefoxAndroid  | and_ff ↪︎ ios_saf2  |
+| Internet Explorer         | Explorer         | ie                       | ie_mob        |                     |
+| Node.js                   | Node             |                          |                |                     |
+| KaiOS Browser             | kaios            |                          |                |                     |
+| Opera                     | Opera            | op_mob                  |                |                     |
+| Opera Mini                | Opera Mini       | op_mini                 |                |                     |
+| QQ browser                | and_qq          |                          |                |                     |
+| Safari                    | Safari           |                          | ios_saf       |                     |
+| Samsung Internet          | Samsung          |                          |                |                     |
+| UC Browser                | UCAndroid        | and_uc                   |                |                     |
+
+**Note:** 
+- The `↪︎` symbol implies that the browser uses the same engine captured by the name.
+- Opera Mobile is approximately equivalent to Chrome Android.
+- All iOS browsers use WebKit.
+- Opera Mini has two modes: “Extreme” and “High” for data saving. `op_mini` targets the “Extreme” mode, while “High” is compatible with the normal Opera Mobile.
