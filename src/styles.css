@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+/* src/styles.css */
+
+.example {
+    display: flex; /* Autoprefixer will handle vendor prefixes */
+    transition: all 0.3s ease; /* Autoprefixer will add necessary prefixes */
+  }
+  
+  @supports (display: grid) {
+    .example {
+      display: grid;
+    }
+  }
+  
