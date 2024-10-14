@@ -22,6 +22,7 @@
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
+    "@spartan-ng/ui-core": "^0.0.1-alpha.356",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
@@ -46,6 +47,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "postcss": "^8.4.47",
     "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.13",
     "typescript": "~5.5.2",
     "typescript-eslint": "8.2.0"
   }
