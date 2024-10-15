@@ -21,7 +21,7 @@
     "module": "ES2022",
     "lib": [
       "ES2022",
-      "dom"
+      "dom" //added Polyfills for browser support of js promise and other .....
     ]
   },
   "angularCompilerOptions": {
